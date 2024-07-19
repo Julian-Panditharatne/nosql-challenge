@@ -10,7 +10,7 @@ This challenge consists of three main parts:
 
 ## Part 1: Database and Jupyter Notebook Set Up
 
-In this part of the challenge, I did the following:
+In this part of the challenge, I used MongoDB and PyMongo to do the following:
 
 - Imported the data provided in the `establishments.json` file from the Terminal; naming the database **uk_food** and the collection **establishments**; and then copied the text that was used to import the data from the Terminal to a markdown cell near the start of the notebook.
 
@@ -20,7 +20,7 @@ In this part of the challenge, I did the following:
 
 ## Part 2: Update the Database
 
-In this part of the challenge, I did the following:
+In this part of the challenge, I used PyMongo to do the following:
 
 - Inserted the following information to the database:
 
@@ -61,11 +61,39 @@ In this part of the challenge, I did the following:
 
 - Checked how many documents contained the Dover Local Authority; then removed any establishments within the Dover Local Authority from the database, and checked the number of documents to ensure they were deleted.
 
+- Used *update_many* to convert number values that were stored as strings, and certain strings were replaced with None data type.
+
+## Part 3: Exploratory Analysis
+
+In this part of the challenge, I used pandas DataFrames and PyMongo to answer the following questions:
+
+1. Which establishments have a hygiene score equal to 20?
+
+2. Which establishments in London have a *RatingValue* greater than or equal to 4?
+
+3. What are the top 5 establishments with a *RatingValue* of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
+
+4. How many establishments in each Local Authority area have a hygiene score of 0, sorted by highest number of establishments per Local Authority Area?
+
 ---
 
 ## **Repository Files and Folders**
 
+Besides this `README.md` file, there are five other files, along with a folder containing one of the five files..
 
+These are the four files that are not within the folder named **Resources**:
+
+- `NoSQL_analysis.ipynb`: The Jupyter Notebook file containing the script used to perform the Exploratory Analysis portion of the challenge.
+
+- `NoSQL_analysis_starter.ipynb`: The Jupyter Notebook file containing the starter code used in the `NoSQL_analysis.ipynb` script file.
+
+- `NoSQL_setup.ipynb`: The Jupyter Notebook file containing the script used to perform the Database Setup and Update portions of the challenge.
+
+- `NoSQL_setup_starter.ipynb`: The Jupyter Notebook file containing the starter code used in the `NoSQL_setup.ipynb` script file.
+
+The **Resources** folder contains the following file:
+
+- `establishments.json`: The JSON file containing the data to be imported into a MongoDB Database.
 
 ---
 
